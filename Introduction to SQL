@@ -1,0 +1,20 @@
+SQL:
+SQL was developed in the 1970s at IBM by Donald D. Chamberlin and Raymond F. Boyce for a project called System R, which was based on E.F. Codd’s Relational Model (1970).
+SQL is a structured query language and it is mainly designed to store, manage and retrive the data in relational database management system(RDBMS). 
+SQL act as a bridge between the user and database like a mediator
+Before SQL:
+In the early days the data was stored in a file systems and it is very hard to use or retrive the data.
+To access or modify the data we need to use the complex procedual code process - They had to specify how to get data in step by step manner.
+There was no standard way to interact with databases — every system had its own language and commands.
+This made data management slow, error-prone, and system-dependent.
+
+Importance of SQL in Real Times:
+websites,bank systems,hospitals,universities,companies,ecommerce etc.
+
+Features of SQL:
+It is easy to learn language that means simple english keywords.
+It has a data definition and Manipulation capabilities.
+It has powerful querying
+Data control features like control access and security.
+Portable and cross platforms and high security like authentication.
+Integrates with other programming languages like c,c#,c++,python,java,php,R and etc.
