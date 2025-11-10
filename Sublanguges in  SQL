@@ -1,0 +1,67 @@
+In SQL we have 5 sublanguages that are:
+DDL - Data Definition Language
+It is used to define ,modify and delete the structure of database like tables,views and indexes.
+DDL works on database design or structure
+All DDL commands are auto commited that means changes made cannot be roll back once it was executed.
+
+commands:
+1.CREATE - It is used to create a table or database.
+         syntax: create table table_name(
+                   col_name1 datatype(size),
+                   col_name2 datatype(size),
+                   ........
+                   ........
+                   );
+
+2.Alter - It is used to update the structure of the column like adding a column or updating data types in the column or updating the column name like that.
+          Syntax: Alter table table_name add column_name datatype(size);
+
+3. Drop - This command is used to delete entire table perminantly.
+           Syntax: Drop table table_name;
+4. Truncate - This command is used to delete the all data present inside the table but table structure cannot be deleted.
+             Syntax: Truncate table table_name;
+5. Rename - This command is used to rename the table_name or column_name.
+             Syntax: for table name: Rename table old_table_name to new_table_name;
+             for column name: Alter table table_name
+                               rename old_column_name to new_column_name;
+   
+
+DML - Data Manipulation Language
+- DML commands are mainly used to manipulate the data inside the table.
+- It effects the data only on the table.
+- DML commands can be rolledback if not commited.
+  1. Insert - This command is used to add the data after creating the table.
+             Syntax: Insert into table_name(col1,col2,col3,.......) values
+                     (val1,val2,val3........);
+  2. Update - This command is used to modift the data inside the table.
+              Syntax: Update table_name set column_name = new_value
+                       where condition;
+  3. Delete - This command is used to delete the records inside the table
+               Syntax: Delete fro table_name
+                       where condition;
+DQL - Data Querying Language
+- DQL commands are used to retrive or fetch the data from the database.
+- It does not modify the data but it only queries the data and displays the result based on the given condition.
+1. Select - This command is used to fetch the data from database.
+             Syntax : Select col1,col2,col3....... from table_name where condition;
+DCL - Data control Language
+- DCL command is used to control access and permissions to the data stored in database table.
+- They are mainly used by database administrators to manage what and who can view the data, modify or manipulate the data.
+1. Grant - This command is used to grant specific permissions to access the database for users.
+           Syntax - Grant privilate_name on object_name
+                     to user_name;
+2. Revoke - This command is used to stop the permissions which are previously granted permissions to users.
+            Syntax: Revoke privilage_name on object_name;
+TCL - Transaction Control Language.
+- TCL commands are used to manage transactions in a database.
+- A transaction is a logical unit of work that includes one or more SQL statements.
+- TCL ensures that all operations within a transactions are completed successfully if not it rollbacks the changes to maintain data consistency.
+1. Commit : This command is used to save the changes made by the data manipulation commands perminantly in database.
+             Syntax: DML queries
+                     commit;
+2. Rollback : This command is used to undo the changes made during the current transactions before they are commited.
+               Syntax: DML queries
+                       Rollback;
+3. Savepoint - This command is used to create a temporary marker in a transaction.
+- we can rollback to specific point instead of undoing the entire transaction.
+  Syntax: Savepoint point_name;
